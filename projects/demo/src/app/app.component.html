@@ -481,7 +481,12 @@
 
 <h1>Mat Tab Nav Bar Gesture</h1>
 
-<nav mat-tab-nav-bar matTabNavBarGesture [swipeLimitWidth]="swipeLimitWidth">
+<nav
+  mat-tab-nav-bar
+  matTabNavBarGesture
+  [swipeLimitWidth]="swipeLimitWidth"
+  [tabPanel]="tabPanel"
+>
   <a mat-tab-link *ngFor="let link of links" href="">
     {{ link }}
   </a>
