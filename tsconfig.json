@@ -12,6 +12,9 @@
       "mat-tab-group-gesture": [
         "dist/mat-tab-group-gesture/mat-tab-group-gesture",
         "dist/mat-tab-group-gesture"
+      ],
+      "mat-tab-nav-gesture": [
+        "dist/mat-tab-nav-gesture"
       ]
     },
     "moduleResolution": "node",

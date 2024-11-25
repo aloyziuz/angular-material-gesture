@@ -143,6 +143,39 @@
           }
         }
       }
+    },
+    "mat-tab-nav-gesture": {
+      "projectType": "library",
+      "root": "projects/mat-tab-nav-gesture",
+      "sourceRoot": "projects/mat-tab-nav-gesture/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mat-tab-nav-gesture/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mat-tab-nav-gesture/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mat-tab-nav-gesture/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/mat-tab-nav-gesture/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

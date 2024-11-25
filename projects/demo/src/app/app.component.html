@@ -40,7 +40,7 @@
         <a
           href="https://www.digitalcitizen.life/emulate-mobile-device-desktop-browser/"
           target="_blank"
-        >https://www.digitalcitizen.life/emulate-mobile-device-desktop-browser/</a
+          >https://www.digitalcitizen.life/emulate-mobile-device-desktop-browser/</a
         >
       </li>
     </ul>
@@ -77,14 +77,14 @@
       Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus.
       Integer euismod lacus luctus magna.
       <b
-      >Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        >Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
         inceptos himenaeos</b
       >. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at
       interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus
       orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui.
       Praesent blandit dolor.
       <i
-      >Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a
+        >Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a
         cursus ipsum ante quis turpis</i
       >. Sed non quam. In vel mi sit amet augue congue elementum.
       <i>Fusce ac turpis quis ligula lacinia aliquet</i>. Morbi in ipsum sit
@@ -97,7 +97,7 @@
       mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi.
       Integer lacinia sollicitudin massa.
       <i
-      >Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        >Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
         inceptos himenaeos</i
       >. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi.
       Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet,
@@ -161,7 +161,7 @@
 
     <p>
       <b
-      >Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit
+        >Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit
         amet, augue</b
       >. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non,
       convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis
@@ -232,7 +232,7 @@
 
     <p>
       <b
-      >Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit
+        >Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit
         amet, augue</b
       >. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non,
       convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis
@@ -303,7 +303,7 @@
 
     <p>
       <b
-      >Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit
+        >Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit
         amet, augue</b
       >. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non,
       convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis
@@ -395,7 +395,7 @@
       Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer
       lacinia sollicitudin massa.
       <b
-      >Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at
+        >Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at
         interdum magna augue eget diam</b
       >. Cras metus. Sed aliquet risus a tortor.
     </p>
@@ -405,7 +405,7 @@
       dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.
       Nulla quam. Aenean laoreet.
       <i
-      >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+        >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
         posuere cubilia Curae; Morbi lacinia molestie dui</i
       >. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede.
       Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed
@@ -459,7 +459,7 @@
       Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer
       lacinia sollicitudin massa.
       <b
-      >Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at
+        >Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at
         interdum magna augue eget diam</b
       >. Cras metus. Sed aliquet risus a tortor.
     </p>
@@ -469,7 +469,7 @@
       dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.
       Nulla quam. Aenean laoreet.
       <i
-      >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+        >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
         posuere cubilia Curae; Morbi lacinia molestie dui</i
       >. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede.
       Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed
@@ -478,3 +478,12 @@
     </p>
   </mat-tab>
 </mat-tab-group>
+
+<h1>Mat Tab Nav Bar Gesture</h1>
+
+<nav mat-tab-nav-bar matTabNavBarGesture [swipeLimitWidth]="swipeLimitWidth">
+  <a mat-tab-link *ngFor="let link of links" href="">
+    {{ link }}
+  </a>
+</nav>
+<mat-tab-nav-panel #tabPanel> </mat-tab-nav-panel>
